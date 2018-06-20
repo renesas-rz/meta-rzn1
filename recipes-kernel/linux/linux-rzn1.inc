@@ -8,7 +8,6 @@ SRC_URI ?= "git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git;bra
 KERNEL_DEFCONFIG ?= "rzn1_defconfig"
 
 inherit kernel
-require recipes-kernel/linux/linux-dtb.inc
 
 S = "${WORKDIR}/git"
 
