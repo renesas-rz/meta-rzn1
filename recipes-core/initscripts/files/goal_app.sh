@@ -15,7 +15,7 @@ then
 			echo -n "Starting goal_rzn_a7_demo_board.bin application"
 			# usb0 is already brought up by /etc/init.d/networking
 			#ifup usb0
-			/home/root/goal_rzn_a7_demo_board.bin -i usb0 &
+			/home/root/goal_rzn_a7_demo_board.bin -i eth0 &
 			sleep 2
 			;;
         
