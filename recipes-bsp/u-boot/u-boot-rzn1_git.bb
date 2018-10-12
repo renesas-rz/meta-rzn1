@@ -11,7 +11,7 @@ PROVIDES += "u-boot"
 # Renesas RZ/N1 repo, use latest release
 SRCBRANCH = "rzn1-stable"
 SRC_URI_rzn1 = "git://github.com/renesas-rz/rzn1_u-boot.git;protocol=https;branch=${SRCBRANCH}"
-SRCREV = "015d3c0799c746f7664a969ec6dff43f46cc5261"
+SRCREV = "rzn1-public-v1.5.3"
 
 S = "${WORKDIR}/git"
 
