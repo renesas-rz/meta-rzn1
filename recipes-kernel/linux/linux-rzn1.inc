@@ -1,7 +1,6 @@
 DESCRIPTION = "Renesas RZ/N1 Linux kernel"
 SECTION = "kernel"
 LICENSE = "GPLv2"
-LIC_FILES_CHKSUM = "file://${S}/COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 PR = "r4"
 
 SRC_URI ?= "git://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git;branch=master"
