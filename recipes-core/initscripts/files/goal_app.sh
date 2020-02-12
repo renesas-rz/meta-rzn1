@@ -5,22 +5,20 @@ export LD_LIBRARY_PATH
 
 if [ -z "`cat /proc/cmdline | grep GOAL_APPL_LINUX_PREV`" ]
 then
-	if [ ! -f /home/root/goal_rzn_a7_demo_board.bin ]; then
+	if [ ! -f /home/root/goal_rzn1d_a7_linux.bin ]; then
 		echo "No GOAL application found"
 		exit 0
 	fi
 
 	case "$1" in
 		start)
-			echo -n "Starting goal_rzn_a7_demo_board.bin application"
-			# usb0 is already brought up by /etc/init.d/networking
-			#ifup usb0
-			/home/root/goal_rzn_a7_demo_board.bin -i eth0 &
+			echo -n "Starting goal_rzn1d_a7_linux.bin application"
+			/home/root/goal_rzn1d_a7_linux.bin -i eth0 &
 			sleep 2
 			;;
         
 		stop)
-			killall goal_rzn_a7_demo_board.bin
+			killall goal_rzn1d_a7_linux.bin
 			;;
 
 		restart|reload)
