@@ -1,4 +1,9 @@
-require recipes-kernel/dtc/dtc.inc
+SUMMARY = "Device Tree Compiler"
+HOMEPAGE = "https://devicetree.org/"
+DESCRIPTION = "The Device Tree Compiler is a tool used to manipulate the Open-Firmware-like device tree used by PowerPC kernels."
+SECTION = "bootloader"
+LICENSE = "GPLv2 | BSD"
+DEPENDS = "flex-native bison-native"
 
 LIC_FILES_CHKSUM = " \
     file://GPL;md5=94d55d512a9ba36caa9b7df079bae19f \
@@ -7,8 +12,10 @@ LIC_FILES_CHKSUM = " \
 
 SRCREV = "22a65c5331c22979d416738eb756b9541672e00d"
 
-SRC_URI += "file://0001-Fix-compiler-warnings-seen-with-musl.patch \
-           "
+SRC_URI += " \
+	git://git.kernel.org/pub/scm/utils/dtc/dtc.git \
+	file://0001-Fix-compiler-warnings-seen-with-musl.patch \
+"
 S = "${WORKDIR}/git"
 
 # only install the dtc binary renamed to dtc-145
