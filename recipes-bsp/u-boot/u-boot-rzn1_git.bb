@@ -13,7 +13,7 @@ PROVIDES += "u-boot"
 # Renesas RZ/N1 repo, use latest release
 SRCBRANCH = "rzn1-stable"
 SRC_URI_rzn1 = "git://github.com/renesas-rz/rzn1_u-boot.git;protocol=https;branch=${SRCBRANCH}"
-SRCREV = "rzn1-v1.8.0"
+SRCREV = "rzn1-v1.8.1"
 
 
 EXTRA_OEMAKE = 'CROSS_COMPILE=${TARGET_PREFIX} CC="${TARGET_PREFIX}gcc ${TOOLCHAIN_OPTIONS}" V=1'
